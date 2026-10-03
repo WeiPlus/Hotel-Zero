@@ -3,6 +3,10 @@ package net.weiplus.hotelzero;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.weiplus.hotelzero.init.HotelZeroModTabs;
+import net.weiplus.hotelzero.init.HotelZeroModItems;
+import net.weiplus.hotelzero.init.HotelZeroModBlocks;
+
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
@@ -36,6 +40,12 @@ public class HotelZeroMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		HotelZeroModBlocks.REGISTRY.register(bus);
+
+		HotelZeroModItems.REGISTRY.register(bus);
+
+		HotelZeroModTabs.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init
