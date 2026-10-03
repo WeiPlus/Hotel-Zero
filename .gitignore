@@ -1,0 +1,8 @@
+run/
+gradle/
+.gradle/
+build/
+.mcreator/
+src/main/resources/assets/hotel_zero/textures
+src/main/resources/assets/hotel_zero/models
+src/main/resources/assets/hotel_zero/blockstates
