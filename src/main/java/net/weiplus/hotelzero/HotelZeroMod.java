@@ -4,6 +4,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import net.weiplus.hotelzero.init.HotelZeroModTabs;
+import net.weiplus.hotelzero.init.HotelZeroModMenus;
 import net.weiplus.hotelzero.init.HotelZeroModItems;
 import net.weiplus.hotelzero.init.HotelZeroModBlocks;
 
@@ -46,6 +47,8 @@ public class HotelZeroMod {
 		HotelZeroModItems.REGISTRY.register(bus);
 
 		HotelZeroModTabs.REGISTRY.register(bus);
+
+		HotelZeroModMenus.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

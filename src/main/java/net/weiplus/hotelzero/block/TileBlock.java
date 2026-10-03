@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class TileBlock extends Block {
 	public TileBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(-1, 3600000));
 	}
 
 	@Override

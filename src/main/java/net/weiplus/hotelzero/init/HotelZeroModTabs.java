@@ -24,12 +24,14 @@ public class HotelZeroModTabs {
 	public static final RegistryObject<CreativeModeTab> HOTEL_ZERO = REGISTRY.register("hotel_zero",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.hotel_zero.hotel_zero")).icon(() -> new ItemStack(HotelZeroModBlocks.TILE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(HotelZeroModBlocks.TILE.get().asItem());
+				tabData.accept(HotelZeroModBlocks.FLOOR.get().asItem());
 			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(HotelZeroModBlocks.TILE.get().asItem());
+			tabData.accept(HotelZeroModBlocks.FLOOR.get().asItem());
 		}
 	}
 }

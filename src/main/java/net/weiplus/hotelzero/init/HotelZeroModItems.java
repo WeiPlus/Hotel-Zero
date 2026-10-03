@@ -17,6 +17,7 @@ import net.minecraft.world.item.BlockItem;
 public class HotelZeroModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, HotelZeroMod.MODID);
 	public static final RegistryObject<Item> TILE = block(HotelZeroModBlocks.TILE);
+	public static final RegistryObject<Item> FLOOR = block(HotelZeroModBlocks.FLOOR);
 
 	// Start of user code block custom items
 	// End of user code block custom items

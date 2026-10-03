@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:air",
+    "hotel_zero:tile",
+    "minecraft:stone"
+  ]
+}
